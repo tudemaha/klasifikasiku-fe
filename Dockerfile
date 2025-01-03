@@ -32,7 +32,6 @@ COPY --from=builder /app/public ./public
 # Step 10: Set environment variables for Next.js
 ENV NODE_ENV=production
 ENV PORT=3000
-ENV NEXT_PUBLIC_BASE_URL=https://klasifikasiku-be-823582095149.us-west1.run.app
 
 # Step 11: Expose the application port
 EXPOSE 3000
