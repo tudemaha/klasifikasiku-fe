@@ -1,0 +1,8 @@
+services:
+  klasifikasikuid_fe:
+    build: .
+    image: maxzycon/klasifikasikuid:latest
+    container_name: klasifikasikuid-fe
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
